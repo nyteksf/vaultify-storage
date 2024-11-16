@@ -7,7 +7,6 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 
-import { Button } from "@/components/ui/button";
 import {
   Form,
   FormItem,
@@ -16,9 +15,10 @@ import {
   FormControl,
   FormMessage,
 } from "@/components/ui/form";
+import { createAccount, signInUser } from "@/lib/actions/user.actions";
+import OtpModal from "@/components/OTPModal";
 import { Input } from "@/components/ui/input";
-import { createAccount } from "@/lib/actions/user.actions";
-import OtpModal from "@/components/ui/OTPModal";
+import { Button } from "@/components/ui/button";
 
 type FormType = "sign-in" | "sign-up";
 
@@ -51,17 +51,20 @@ const AuthForm = ({ type }: { type: FormType }) => {
     setErrorMessage("");
 
     try {
-      const user = await createAccount({
-        fullName: values.fullName || "",
-        email: values.email,
-      });
-  
+      const user =
+        type === "sign-up"
+          ? await createAccount({
+              fullName: values.fullName || "",
+              email: values.email,
+            })
+          : await signInUser({ email: values.email });
+
       setAccountId(user.accountId);
     } catch {
       setErrorMessage("Failed to create account. Please try again.");
     } finally {
       setIsLoading(false);
-    };
+    }
   };
 
   return (
@@ -155,10 +158,7 @@ const AuthForm = ({ type }: { type: FormType }) => {
         </form>
       </Form>
       {accountId && (
-        <OtpModal 
-          email={form.getValues("email")}
-          accountId={accountId}
-        /> 
+        <OtpModal email={form.getValues("email")} accountId={accountId} />
       )}
     </>
   );
