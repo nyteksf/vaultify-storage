@@ -47,13 +47,14 @@ const MobileNavigation = ({
       />
 
       <Sheet open={open} onOpenChange={setOpen}>
-        <SheetTrigger>Open</SheetTrigger>
-        <Image
-          src="/assets/icons/menu.svg"
-          alt="Search"
-          height={30}
-          width={30}
-        />
+        <SheetTrigger>
+          <Image
+            src="/assets/icons/menu.svg"
+            alt="Search"
+            height={30}
+            width={30}
+          />
+        </SheetTrigger>
         <SheetContent className="shad-screen h-screen px-3">
           <SheetTitle>
             <div className="header-user">
@@ -102,11 +103,14 @@ const MobileNavigation = ({
           <Separator className="my-5 bg-light-200/20" />
 
           <div className="flex flex-col justify-between gap-5 pb-5">
-            <FileUploader
-              ownerId={ownerId}
-              accountId={accountId}
-            />
-            <Button type="submit" className="mobile-sign-out-button" onClick={async () => { await signOutUser() }}>
+            <FileUploader ownerId={ownerId} accountId={accountId} />
+            <Button
+              type="submit"
+              className="mobile-sign-out-button"
+              onClick={async () => {
+                await signOutUser();
+              }}
+            >
               <Image
                 src="/assets/icons/logout.svg"
                 alt="Logout"
