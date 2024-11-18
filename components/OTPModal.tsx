@@ -36,20 +36,33 @@ const OtpModal = ({
   const handleSubmit = async (e: React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
     setIsLoading(true);
-
+  
     try {
+      console.log("accountId before API call:", accountId);
+      console.log("password before API call:", password);
+  
+      if (!accountId || !password) {
+        console.error("Missing accountId or password");
+        setIsLoading(false);
+        return;
+      }
+  
       // CALL API TO VERIFY USER'S OTP
       const sessionId = await verifySecret({ accountId, password });
-
+  
       if (sessionId) {
+        console.log("OTP verified successfully, sessionId:", sessionId);
         router.push("/");
-      };
-    } catch (error) {
-      console.log("Failed to verify OTP", error);
+      } else {
+        console.error("Session ID is null or undefined");
+      }
+    } catch (error: any) {
+      console.error("Failed to verify OTP", error?.response?.data || error.message);
     }
-
+  
     setIsLoading(false);
   };
+  
 
   const handleResendOtp = async () => {
     await sendEmailOTP({ email });

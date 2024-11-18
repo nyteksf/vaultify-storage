@@ -20,15 +20,17 @@ const Thumbnail = ({
   const isImage = type === "image" && extension !== "svg";
 
   return (
-    <figure className={cn(
-        "thumbnail", className
-    )}>
+    <figure className={cn("thumbnail", className)}>
       <Image
         src={isImage ? url : getFileIcon(extension, type)}
         alt="Thumbnail"
         height={100}
         width={100}
-        className={cn("size-8 object-contain", imageClassName, isImage && "thumbnail-image")}
+        className={cn(
+          "size-8 object-contain",
+          imageClassName,
+          isImage && "thumbnail-image"
+        )}
       />
     </figure>
   );
