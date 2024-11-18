@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   width="230"
+   width="234"
    height="82"
-   viewBox="0 0 230 82"
+   viewBox="0 0 234 82"
    fill="none"
    version="1.1"
    id="svg2"
@@ -25,7 +25,7 @@
      inkscape:deskcolor="#d1d1d1"
      showguides="true"
      inkscape:zoom="5.5810928"
-     inkscape:cx="134.74064"
+     inkscape:cx="115.21041"
      inkscape:cy="49.00474"
      inkscape:window-width="1920"
      inkscape:window-height="974"
@@ -41,7 +41,8 @@
      fill="#ffffff"
      id="rect1"
      x="0"
-     y="0" />
+     y="0"
+     style="fill:#ffffff;fill-opacity:1" />
   <rect
      x="32.7393"
      y="31.180099"
@@ -49,16 +50,17 @@
      height="49.888199"
      rx="24.944099"
      fill="#ffffff"
-     id="rect2" />
+     id="rect2"
+     style="fill:#ffffff;fill-opacity:1" />
   <text
      xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:34.6667px;font-family:Sans;-inkscape-font-specification:'Sans, Semi-Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#ffffff"
-     x="93.128067"
-     y="52.319504"
+     style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:34.6667px;font-family:Sans;-inkscape-font-specification:'Sans, Semi-Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#ffffff;fill-opacity:1"
+     x="97.128067"
+     y="54.319504"
      id="text2"><tspan
        id="tspan2"
-       x="93.128067"
-       y="52.319504"
-       style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:34.6667px;font-family:Poppins;-inkscape-font-specification:'Poppins, Semi-Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+       x="97.128067"
+       y="54.319504"
+       style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:34.6667px;font-family:Poppins;-inkscape-font-specification:'Poppins, Semi-Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1"
        sodipodi:role="line">Vaultify</tspan></text>
 </svg>
