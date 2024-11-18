@@ -23,7 +23,7 @@ const Sidebar = ({ fullName, avatar, email }: SidebarProps) => {
     <aside className="sidebar">
       <Link href="/">
         <Image
-          src="/assets/icons/logo-full-brand.svg"
+          src="/assets/icons/logo-full-2-brand.svg"
           alt="Logo Large"
           width={160}
           height={50}
