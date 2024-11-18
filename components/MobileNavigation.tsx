@@ -37,7 +37,7 @@ const MobileNavigation = ({
   const pathname = usePathname();
 
   return (
-    <header>
+    <header className="mobile-header">
       <Image
         src="/assets/icons/logo-full-2-brand.svg"
         alt="Logo"
