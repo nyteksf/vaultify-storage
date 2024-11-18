@@ -1,8 +1,7 @@
-import React from "react";
+"use client";
 
-import {
-  Dialog,
-} from "@/components/ui/dialog";
+import Image from "next/image";
+import React, { useState } from "react";
 
 import {
   DropdownMenu,
@@ -13,18 +12,35 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 
+import { actionDropdownItems } from "@/constants";
+
+import { Dialog } from "@/components/ui/dialog";
+
 const ActionDropdown = ({ file }: { file: File }) => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
   return (
-    <Dialog>
-      <DropdownMenu>
-        <DropdownMenuTrigger>Open</DropdownMenuTrigger>
+    <Dialog open={isModalOpen} onOpenChange={setIsModalOpen}>
+      <DropdownMenu open={isDropdownOpen} onOpenChange={setIsDropdownOpen}>
+        <DropdownMenuTrigger className="shad-no-focus">
+          <Image
+            src="/assets/icons/dots.svg"
+            alt="card nav icon"
+            width={34}
+            height={34}
+          />
+        </DropdownMenuTrigger>
         <DropdownMenuContent>
-          <DropdownMenuLabel>My Account</DropdownMenuLabel>
+          <DropdownMenuLabel className="max-w-[200px] truncate">
+            {file.name}
+          </DropdownMenuLabel>
           <DropdownMenuSeparator />
-          <DropdownMenuItem>Profile</DropdownMenuItem>
-          <DropdownMenuItem>Billing</DropdownMenuItem>
-          <DropdownMenuItem>Team</DropdownMenuItem>
-          <DropdownMenuItem>Subscription</DropdownMenuItem>
+          {actionDropdownItems.map((actionItem) => (
+            <DropdownMenuItem key={actionItem.value}>
+              {actionItem.label}
+            </DropdownMenuItem>
+          ))}
         </DropdownMenuContent>
       </DropdownMenu>
     </Dialog>
