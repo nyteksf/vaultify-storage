@@ -20,26 +20,38 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from "@/components/ui/dialog"
+} from "@/components/ui/dialog";
 
 import { constructDownloadUrl } from "@/lib/utils";
 import { actionDropdownItems } from "@/constants";
+import { Input } from "@/components/ui/input";
 
 const ActionDropdown = ({ file }: { file: File }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [action, setAction] = useState<ActionType | null>(null);
+  const [name, setName] = useState(file.name)
 
   const renderDialogContent = () => {
-    <DialogContent>
-      <DialogHeader>
-        <DialogTitle>Are you absolutely sure?</DialogTitle>
-        <DialogDescription>
-          This action cannot be undone. This will permanently delete your
-          account and remove your data from our servers.
-        </DialogDescription>
-      </DialogHeader>
-    </DialogContent>;
+    if (!action) return null;
+
+    const { value, label } = action;
+
+    return (
+      <DialogContent className="shad-dialog button">
+        <DialogHeader className="flex flex-col gap-3">
+          <DialogTitle className="text-center text-light-100">
+            {label}
+          </DialogTitle>
+          {value === "rename" && (
+            <Input
+              type="text"
+              value={name}
+            />
+          )}
+        </DialogHeader>
+      </DialogContent>
+    );
   };
 
   return (
