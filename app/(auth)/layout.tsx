@@ -11,7 +11,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
             alt="logo image"
             width={224}
             height={82}
-            className="h-auto transition hover:brightness-98"
+            className="h-auto transition hover:brightness-[98%]"
           />
 
           <div className="space-y-5 text-white">

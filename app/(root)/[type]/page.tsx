@@ -3,7 +3,7 @@ import { Models } from "node-appwrite";
 
 import Card from "@/components/Card";
 import Sort from "@/components/Sort";
-import { convertFileSize, getFileTypesParams } from "@/lib/utils";
+import { getFileTypesParams } from "@/lib/utils";
 import { getFiles, getSumFilesSize } from "@/lib/actions/file.actions";
 
 const Page = async ({ searchParams, params }: SearchParamProps) => {
