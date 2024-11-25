@@ -88,7 +88,6 @@ const createQueries = (
   if (types.length > 0) queries.push(Query.equal("type", types));
   if (searchText) queries.push(Query.contains("name", searchText));
   if (limit) queries.push(Query.limit(limit));
-  console.log("Sort value received before sort:", sort); // Add this
   if (sort) {
     const [sortBy, orderBy] = sort.split("-");
 
@@ -97,7 +96,6 @@ const createQueries = (
     );
   }
 
-  console.log(queries);
   return queries;
 };
 
@@ -117,16 +115,12 @@ export const getFiles = async ({
   sort = "$createdAt-asc",
   limit,
 }: GetFilesProps) => {
-  console.log("1. Initial sort value:", sort); // Add this
   const { databases } = await createAdminClient();
 
   try {
     const currentUser = await getCurrentUser();
-    console.log("2. Sort value after currentUser:", sort); // Add this
     if (!currentUser) throw new Error("User not found.");
-    console.log("sort: ", sort);
     const queries = createQueries(currentUser, types, searchText, sort, limit);
-    console.log("3. Sort value being passed to createQueries:", sort); // Add this
     const files = await databases.listDocuments(
       appwriteConfig.databaseId,
       appwriteConfig.filesCollectionId,
