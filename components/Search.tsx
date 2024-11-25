@@ -24,7 +24,6 @@ const Search = () => {
 
   useEffect(() => {
     const fetchFiles = async () => {
-      console.log("0. Sort value being passed to getFiles:", "$createdAt-asc"); // Add this
       if (debouncedQuery.length === 0) {
         setResults([]);
         setOpen(false);

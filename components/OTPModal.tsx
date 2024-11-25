@@ -38,9 +38,6 @@ const OtpModal = ({
     setIsLoading(true);
   
     try {
-      console.log("accountId before API call:", accountId);
-      console.log("password before API call:", password);
-  
       if (!accountId || !password) {
         console.error("Missing accountId or password");
         setIsLoading(false);
@@ -51,7 +48,6 @@ const OtpModal = ({
       const sessionId = await verifySecret({ accountId, password });
   
       if (sessionId) {
-        console.log("OTP verified successfully, sessionId:", sessionId);
         router.push("/");
       } else {
         console.error("Session ID is null or undefined");
