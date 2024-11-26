@@ -2,7 +2,11 @@
 <svg width="234" height="82" viewBox="0 0 234 82" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <style type="text/css">
-      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+      @font-face {
+        font-family: 'Poppins';
+        font-weight: 600;
+        src: url("data:font/woff2;charset=utf-8;base64,d09GMgABAAAAADZoAA0AAAAAedQAADYMAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAABmAAeCocgnAZIAZgAIQeEQgKuHjKdQuCCgABNgIkA4FqBCAFhUIHIBuisRVRlDBsmezARQpqBmHvRzbmydkPrf7/LyRsEwEddIyyjRLtCBGJRKLskfh3//j/1U1FnBhxYoQ8Yg8RN4Q4SXxVMlVLpXYWs8nUxVo0E9Vz1WikqIfsJ7sckRwk6XbrlOjutdslQoaYR0hnSEfMPX83Bnd9xnbQ2KIemL1Z0P3z4OLh2Z/NLZfenL+aXQSEw1K8CZ6Xb2cnQ4Cka6M8aDQqgqRi+S3wvJzBlLMVMjR3EvIukOvw2/yLxBR4IbsmgV/1nyRW4tXt+sWf9Lh7eH1xdRN28mHf2Dz9yW58H+OEqYwplkqlUol4JAVIAo7QjAzPqPCM/Y4aMb8y1x9Nac5Hmucf8e+9H4/Tv/35v7PmqbUmJAaepFb4qbWmJCbG4rM0IpNm8lInRZPeSsLBa01NuStJ5DmPW8iKyITIEeqDXhCE/qIDFJDzaRr+Rt8pdRIe+q8Pv+X4Pv8s/Tb+c/ATPvNj/pW+X+N7+V0BXkAjc+QUhECRFrMCCu8MVRXhGBwHx0yj2UNzGTTD0qQZlv6PNhiDYRMsG3k7bCMtw9Kc4FLw7Kzg+9Fz60FDIJUWNIc/zMx8mJn5BLTDaHCCFAJDg1YsUBYoCzTASrRiobIgOYBWANGKBcqC5ABaAUQrFigLlANoBRCtWAUKJzgIxAJlgbIgOYBWANGKhcoC5QBaAUQrVCyJA4uUBcgBtAKIViiwYjFq1KhRo0aN9EiPCayLjR3t7MzqhxYtynk2nMjv3bu+e7c27W5uytDrOzN3ypTsqVOzp0/PvmFOqh3hxEltwEPH4yXhDx1PkPTDJ3dKw5dKpSn2lScNK50qHSsPy4fqg/VFhvDMrD8qLBQVNhEL8wqZLypDUmHlQGVBOJ6SWJw+6gnnkxqKsldIVeFocXj/+5/yVe9UF2OdnYh45mTNnPx3CmAb7cBfGjRoVfBPCxxHjcZ/auAoO7Af4R8d2I+A/yPgy0f/0L4WwVcAO8Aq8Dny+X/9dv3mzbd3zrsBrsV/+t3WrX/3GwRuX4NAtQgolUqlUqnzUt4BAAAAAAAAAA==") format('woff2');
+      }
     </style>
   </defs>
   <rect opacity="0.2" width="74.832298" height="74.832298" rx="37.4161" fill="#fa7275" x="0" y="0"/>
