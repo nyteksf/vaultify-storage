@@ -303,7 +303,7 @@ export const getFileTypesParams = (type: string) => {
 };
 
 // DASHBOARD UTILS
-export const getUsageSummary = (totalSpace: unknown) => {
+export const getUsageSummary = (totalSpace: any) => {
   return [
     {
       title: "Documents",
