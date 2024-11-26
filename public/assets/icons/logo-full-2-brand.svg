@@ -2,12 +2,7 @@
 <svg width="234" height="82" viewBox="0 0 234 82" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <style type="text/css">
-      @font-face {
-        font-family: 'Poppins';
-        src: url('https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLCz7Z1xlFQ.woff2') format('woff2');
-        font-weight: 600;
-        font-style: normal;
-      }
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
     </style>
   </defs>
   <rect opacity="0.2" width="74.832298" height="74.832298" rx="37.4161" fill="#fa7275" x="0" y="0"/>
