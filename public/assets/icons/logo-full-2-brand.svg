@@ -5,7 +5,8 @@
       @font-face {
         font-family: 'Poppins';
         font-weight: 600;
-        src: url("data:font/woff2;charset=utf-8;base64,d09GMgABAAAAADZoAA0AAAAAedQAADYMAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAABmAAeCocgnAZIAZgAIQeEQgKuHjKdQuCCgABNgIkA4FqBCAFhUIHIBuisRVRlDBsmezARQpqBmHvRzbmydkPrf7/LyRsEwEddIyyjRLtCBGJRKLskfh3//j/1U1FnBhxYoQ8Yg8RN4Q4SXxVMlVLpXYWs8nUxVo0E9Vz1WikqIfsJ7sckRwk6XbrlOjutdslQoaYR0hnSEfMPX83Bnd9xnbQ2KIemL1Z0P3z4OLh2Z/NLZfenL+aXQSEw1K8CZ6Xb2cnQ4Cka6M8aDQqgqRi+S3wvJzBlLMVMjR3EvIukOvw2/yLxBR4IbsmgV/1nyRW4tXt+sWf9Lh7eH1xdRN28mHf2Dz9yW58H+OEqYwplkqlUol4JAVIAo7QjAzPqPCM/Y4aMb8y1x9Nac5Hmucf8e+9H4/Tv/35v7PmqbUmJAaepFb4qbWmJCbG4rM0IpNm8lInRZPeSsLBa01NuStJ5DmPW8iKyITIEeqDXhCE/qIDFJDzaRr+Rt8pdRIe+q8Pv+X4Pv8s/Tb+c/ATPvNj/pW+X+N7+V0BXkAjc+QUhECRFrMCCu8MVRXhGBwHx0yj2UNzGTTD0qQZlv6PNhiDYRMsG3k7bCMtw9Kc4FLw7Kzg+9Fz60FDIJUWNIc/zMx8mJn5BLTDaHCCFAJDg1YsUBYoCzTASrRiobIgOYBWANGKBcqC5ABaAUQrFigLlANoBRCtWAUKJzgIxAJlgbIgOYBWANGKhcoC5QBaAUQrVCyJA4uUBcgBtAKIViiwYjFq1KhRo0aN9EiPCayLjR3t7MzqhxYtynk2nMjv3bu+e7c27W5uytDrOzN3ypTsqVOzp0/PvmFOqh3hxEltwEPH4yXhDx1PkPTDJ3dKw5dKpSn2lScNK50qHSsPy4fqg/VFhvDMrD8qLBQVNhEL8wqZLypDUmHlQGVBOJ6SWJw+6gnnkxqKsldIVeFocXj/+5/yVe9UF2OdnYh45mTNnPx3CmAb7cBfGjRoVfBPCxxHjcZ/auAoO7Af4R8d2I+A/yPgy0f/0L4WwVcAO8Aq8Dny+X/9dv3mzbd3zrsBrsV/+t3WrX/3GwRuX4NAtQgolUqlUqnzUt4BAAAAAAAAAA==") format('woff2');
+        font-display: swap;
+        src: url("data:font/woff2;charset=utf-8;base64,d09GMgABAAAAADZoAA0AAAAAedQAADYMAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAABmAAeCocgnAZIAZgAIQeEQgKuHjKdQuCCgABNgIkA4FqBCAFhUIHIBuisRVRlDBsmezARQpqBmHvRzbmydkPrf7/LyRsEwEddIyyjRLtCBGJRKLskfh3//j/1U1FnBhxYoQ8Yg8RN4Q4SXxVMlVLpXYWs8nUxVo0E9Vz1WikqIfsJ7sckRwk6XbrlOjutdslQoaYR0hnSEfMPX83Bnd9xnbQ2KIemL1Z0P3z4OLh2Z/NLZfenL+aXQSEw1K8CZ6Xb2cnQ4Cka6M8aDQqgqRi+S3wvJzBlLMVMjR3EvIukOvw2/yRmAJfZNck8Kv+k8RK/LpdfyNO7sHe3F1d3IOfeLsfPsQJUxlTLJVKpRLxSAqQBByhGRmeUeEZ+x01Yn5lrj+a0pyPNM8/4t97Px6nf/vzf2fNU2tNSAw8Sa3wU2tNSUyMxWdpRCbN5KVOiia9lYSD15qacleS4nFOt7WigOToO4AQO04HOPCcfqfUSXjov37+luN7/Z3Um/jPwU/4zI/5V/p+je/ldwV4AY3MkVMQAkVazAoovDFUVYRjcBwcM41mD81l0AxLk2ZY+j/aYAyGTbBs5O2wjLQMS3OCi8Gzs4LvR8+tBw2BVFrQHP4wM/NhZuYT0A6jwQlSCAwNWrFAWaAs0AAr0YqFyoLkAFoBRCsWKAuUA2gFEK1YoHCCg0AsUBYoC5IDaAUQrVigLFAOoBVAtELFkjiwSFmAHEArABILhcV/KiABXg==") format('woff2');
       }
     </style>
   </defs>
@@ -17,7 +18,8 @@
     font-family="Poppins, sans-serif" 
     font-weight="600" 
     font-size="34.6667" 
-    fill="#fa7275">
+    fill="#fa7275"
+    text-rendering="optimizeLegibility">
     Vaultify
   </text>
 </svg>
